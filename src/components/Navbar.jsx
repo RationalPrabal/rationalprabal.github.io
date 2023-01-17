@@ -16,11 +16,11 @@ import {
     useBreakpointValue,
     useDisclosure,
   } from '@chakra-ui/react';
+  import { Link as RouterLink} from "react-router-dom"
   import {
     HamburgerIcon,
     CloseIcon,
     ChevronDownIcon,
-    ChevronLeftIcon,
     ChevronRightIcon,
     DownloadIcon
   } from '@chakra-ui/icons';
@@ -33,7 +33,12 @@ import {
     return (
       <Box>
         <Flex
-        
+        position="fixed"
+        left="0"
+        right="0"
+        top="0"
+        bg="red"
+        zIndex="100"
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
@@ -42,6 +47,7 @@ import {
           borderColor={useColorModeValue('gray.200', 'gray.900')}
           align={'center'}  >
           <Flex
+      
             flex={{ base: 1, md: 'center' }}
             ml={{ base: -2 }}
             display={{ base: 'flex', md: 'none' }}>
@@ -58,7 +64,8 @@ import {
             <Text 
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
-            fontSize="4xl" as="b"  color={useColorModeValue( 'white')}>
+            
+            fontSize="4xl" as="b"  >
          {a} Prabal /{b}
             </Text>
             </Flex>
@@ -72,14 +79,16 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-            <Button
+     <Button onClick={()=>{
+      window.location.href="https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link"
+     }}
               as={'a'}
               border="2px solid red"
-            bg="black"
+            bg="red"
               fontSize={'md'}
               fontWeight={800}>
         <DownloadIcon/>      Resume
-            </Button>
+            </Button> 
           </Stack>
         </Flex>
   
