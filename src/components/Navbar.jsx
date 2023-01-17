@@ -17,6 +17,7 @@ import {
     useDisclosure,
   } from '@chakra-ui/react';
   import { Link as RouterLink} from "react-router-dom"
+  
   import {
     HamburgerIcon,
     CloseIcon,
@@ -39,7 +40,7 @@ import {
         top="0"
         bg="red"
         zIndex="100"
-          minH={'60px'}
+          minH={{base:"20px",sm:"30px", md:"60px"}}
           py={{ base: 2 }}
           px={{ base: 4 }}
           borderBottom={1}
@@ -65,7 +66,7 @@ import {
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
             
-            fontSize="4xl" as="b"  >
+            fontSize={{base:"xl",sm:"2xl",md:"4xl"}} as="b"  >
          {a} Prabal /{b}
             </Text>
             </Flex>
@@ -86,6 +87,8 @@ import {
               border="2px solid red"
             bg="red"
               fontSize={'md'}
+           href="./Prabal_Kumar_Dwivedi_Resume"
+              download={true}
               fontWeight={800}>
         <DownloadIcon/>      Resume
             </Button> 
