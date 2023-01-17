@@ -18,7 +18,7 @@ const Skills = () => {
         {"img":"https://cdn-icons-png.flaticon.com/512/8297/8297437.png"},
         {"img":"https://www.edureka.co/blog/wp-content/uploads/2019/07/express-logo.png"}
     ]
-  return <Box  mt={{base:"20",sm:"40",md:"70"}}>
+  return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}>
     <Text as="b" fontSize="5xl">My Skills</Text>
 <Box>
     <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"90%",sm:"80%",md:"70%"}}m="auto" textAlign={"center"} gap={{sm:"8",md:"10"}} mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"75",sm:"90",md:"90"}}>

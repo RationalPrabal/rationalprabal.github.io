@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 const Contact=()=>{
     return <>
-    <Box mt={{base:"30", sm:"50",md:"70"}}>
+    <Box id="Contact" mt={{base:"30", sm:"50",md:"70"}}>
     <Text   fontSize={"5xl" } as="b" >Interested to work together? Let's talk</Text>
     </Box>
     <Box display={{base:"grid",sm:"grid", md:"flex"}} w="80%" m="auto" justifyContent={{base:"center",sm:"center",md:"space-between"}}>

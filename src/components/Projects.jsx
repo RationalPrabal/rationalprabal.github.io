@@ -7,7 +7,7 @@ import goodcluck from "./goodcluck.png"
 const Projects = () => {
 
   return (
-    <Grid m="auto" w="80%" mt={{base:"50",sm:"50",md:"70"}}> 
+    <Grid id="Projects" m="auto" w="80%" mt={{base:"50",sm:"50",md:"70"}}> 
         <Text as="b" fontSize={"5xl" } >Projects</Text>
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
     <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto">

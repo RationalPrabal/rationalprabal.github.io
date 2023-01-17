@@ -8,7 +8,7 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
+    Link as link,
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -16,7 +16,7 @@ import {
     useBreakpointValue,
     useDisclosure,
   } from '@chakra-ui/react';
-  import { Link as RouterLink} from "react-router-dom"
+  import {Link} from "react-scroll";
   
   import {
     HamburgerIcon,
@@ -32,14 +32,15 @@ import {
   const b=">"
 
     return (
-      <Box>
+      <Box   position="fixed"
+      left="0"
+      right="0"
+      zIndex="100"
+      top="0">
         <Flex
-        position="fixed"
-        left="0"
-        right="0"
-        top="0"
-        bg="red"
-        zIndex="100"
+      
+        bg="teal.500"
+       
           minH={{base:"20px",sm:"30px", md:"60px"}}
           py={{ base: 2 }}
           px={{ base: 4 }}
@@ -84,13 +85,15 @@ import {
       window.location.href="https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link"
      }}
               as={'a'}
-              border="2px solid red"
-            bg="red"
-              fontSize={'md'}
+            bg="transparent"
+           _hover="none"
+              fontSize={'lg'}
            href="./Prabal_Kumar_Dwivedi_Resume"
               download={true}
-              fontWeight={800}>
-        <DownloadIcon/>      Resume
+              fontWeight={700}
+              
+              >
+        <DownloadIcon mx="2"/>      Resume
             </Button> 
           </Stack>
         </Flex>
@@ -113,12 +116,14 @@ import {
           <Box key={navItem.label}>
             <Popover trigger={'hover'} placement={'bottom-start'}>
               <PopoverTrigger>
-                <Link
-                  p={2}
-                  href={navItem.href ?? '#'}
-                  fontSize={'lg'}
-                  fontWeight={700}
+                <Link to={navItem.label}
+                 spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-50}
+              
                  
+                style={{fontWeight:"700", fontSize:"1.25rem",padding:"6px"}}
                   _hover={{
                     textDecoration: 'none',
                     color: linkHoverColor,
@@ -186,8 +191,10 @@ import {
   const MobileNav = () => {
     return (
       <Stack
-        bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue('white', 'gray.800')}
         p={4}
+w="40%"
+h="100vh"
         display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
@@ -197,24 +204,27 @@ import {
   };
   
   const MobileNavItem = ({ label, children, href }) => {
+   // console.log(label)
     const { isOpen, onToggle } = useDisclosure();
   
     return (
       <Stack spacing={4} onClick={children && onToggle}>
         <Flex
+      
           py={2}
-          as={Link}
+          // as={link}
+        
           href={href ?? '#'}
           justify={'space-between'}
           align={'center'}
           _hover={{
             textDecoration: 'none',
           }}>
-          <Text
+          <Link to={label}
             fontWeight={600}
             color={useColorModeValue('gray.600', 'gray.200')}>
             {label}
-          </Text>
+          </Link>
           {children && (
             <Icon
               as={ChevronDownIcon}
@@ -230,16 +240,25 @@ import {
           <Stack
             mt={2}
             pl={4}
+           /// border={"2px solid green"}
+            //direction="column"
+            //position="absolute"
+            //zIndex={100}
+            top="10"
+            height="120"
             borderLeft={1}
             borderStyle={'solid'}
             borderColor={useColorModeValue('gray.200', 'gray.700')}
             align={'start'}>
-            {children &&
-              children.map((child) => (
-                <Link key={child.label} py={2} href={child.href}>
+            {/* {children &&
+              children.map((child) => {
+console.log(child)
+                return (
+                <Link key={child.label} to={child.label} py={2} href={child.href}>
                   {child.label}
                 </Link>
-              ))}
+              )})} */}
+            
           </Stack>
         </Collapse>
       </Stack>
