@@ -5,7 +5,11 @@ import About from "./components/About"
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact"
+import React from "react"
 function App() {
+React.useEffect(()=>{
+document.title="Prabal_Portfolio"
+},[])
   return (
     <div className="App">
      <WithSubnavigation/>
