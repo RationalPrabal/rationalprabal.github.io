@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.47799f28.css",
-    "main.js": "/static/js/main.39bc3f09.js",
+    "main.js": "/static/js/main.dd5fe7a0.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.83a177a7fd89c0d1367f.jpg",
     "static/media/BabyBliss.png": "/static/media/BabyBliss.a13febc3adecd1991da2.png",
@@ -13,11 +13,11 @@
     "static/media/cronofit.png": "/static/media/cronofit.500dbdc9acd38c7764ab.png",
     "index.html": "/index.html",
     "main.47799f28.css.map": "/static/css/main.47799f28.css.map",
-    "main.39bc3f09.js.map": "/static/js/main.39bc3f09.js.map",
+    "main.dd5fe7a0.js.map": "/static/js/main.dd5fe7a0.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47799f28.css",
-    "static/js/main.39bc3f09.js"
+    "static/js/main.dd5fe7a0.js"
   ]
 }
