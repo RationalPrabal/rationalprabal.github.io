@@ -26,26 +26,20 @@ const Skills = () => {
   return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}>
     <Text as="b" fontSize="5xl">Skills</Text>
 <Box>
-    <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"90%",sm:"80%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} >
-        {arr.map(el=><GridItem className='flip-card' >
-
-      
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-    <Img w="50%" m="auto" src={el.img} />
-    </div>
+    <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"100%",sm:"100%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"10",sm:"10",md:"20"}} >
+        {arr.map(el=><GridItem  >
     
-    <div class="flip-card-back">
+    <Box  data-aos="flip-up">
     <Img w="50%" m="auto" src={el.img} />
-    </div>
-  </div>
+    </Box>
+
 
 
         </GridItem>)}
     </Grid>
 </Box>
 <Text as="b" fontSize="5xl">Tools</Text>
-<Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20">
+<Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20" rowGap={{base:"10",sm:"10",md:"20"}}>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
         <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/906/906324.png"/>
     </Box>
