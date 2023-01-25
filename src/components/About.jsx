@@ -5,7 +5,7 @@ import Prabal from "./Prabal.png.png"
 const About = () => {
   return (
 <>
-<Box id="About" display={{sm:"grid" ,md:"flex"}} w="90%" m="auto" mt={{base:"20",sm:"40",lg:"200"}} alignItems="center" justifyContent="space-between">
+<Box id="About" display={{sm:"grid" ,md:"flex"}} w="90%" m="auto" mt={{base:"20",sm:"40",lg:"100"}} alignItems="center" justifyContent="space-between">
 <Box w={{sm:"90%",md:"50%"}} >
   <Box display={"flex"} justifyContent="center">
     <Text as="b" fontSize="3xl" mr="10px">I'm </Text>

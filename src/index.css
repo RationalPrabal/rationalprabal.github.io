@@ -1,5 +1,9 @@
+
+
 body {
   margin: 0;
+  background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
+  background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

@@ -1,11 +1,12 @@
-html {
-    height: 100%;
-  }
-  body {
+
+  .bg {
     margin:0;
     padding:0;
     font-family: sans-serif;
+  border: 1px solid black;
     background: linear-gradient(#141e30, #243b55);
+    background-image: url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-attachment: fixed;
   }
   @media only screen and (max-width: 767px) {
     .login-box {
@@ -74,11 +75,11 @@ html {
     font-size: 12px;
   }
    */
-  .login-box form a {
+  .login-box  form a {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: "white";
+    color: white;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;

@@ -25,6 +25,7 @@ import {
     ChevronRightIcon,
     DownloadIcon
   } from '@chakra-ui/icons';
+  import Prabal_Kumar_Dwivedi_Resume from "./Prabal_Kumar_Dwivedi_Resume.pdf"
   
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
@@ -36,7 +37,8 @@ import {
       left="0"
       right="0"
       zIndex="100"
-      top="0">
+      top="0"
+     >
         <Flex
       
         bg="teal.500"
@@ -82,14 +84,14 @@ import {
             direction={'row'}
             spacing={6}>
      <Button onClick={()=>{
-      window.location.href="https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link"
+      window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","blank")
      }}
               as={'a'}
             bg="transparent"
            _hover="none"
               fontSize={'lg'}
-           href="./Prabal_Kumar_Dwivedi_Resume"
-              download={true}
+           href={Prabal_Kumar_Dwivedi_Resume}
+              download="Prabal_Kumar_Dwivedi_Resume"
               fontWeight={700}
               
               >

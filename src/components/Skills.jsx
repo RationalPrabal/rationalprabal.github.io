@@ -1,8 +1,11 @@
 import React from 'react'
+import "./Skills.css"
+import AOS from "aos";
 
-import GitHubCalendar from "react-github-calendar";
+import "aos/dist/aos.css";
 import { Box ,Text,Grid,GridItem,Img} from '@chakra-ui/react'
 const Skills = () => {
+    AOS.init()
     var arr=[
         {"img":"https://cdn-icons-png.flaticon.com/512/174/174854.png"}
         ,
@@ -18,26 +21,49 @@ const Skills = () => {
         {"img":"https://cdn-icons-png.flaticon.com/512/8297/8297437.png"},
         {"img":"https://www.edureka.co/blog/wp-content/uploads/2019/07/express-logo.png"}
     ]
+
+
   return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}>
-    <Text as="b" fontSize="5xl">My Skills</Text>
+    <Text as="b" fontSize="5xl">Skills</Text>
 <Box>
-    <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"90%",sm:"80%",md:"70%"}}m="auto" textAlign={"center"} gap={{sm:"8",md:"10"}} mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"75",sm:"90",md:"90"}}>
-        {arr.map(el=><GridItem >
-<Img w="70%" m="auto" src={el.img} />
+    <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"90%",sm:"80%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} >
+        {arr.map(el=><GridItem className='flip-card' >
+
+      
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <Img w="50%" m="auto" src={el.img} />
+    </div>
+    
+    <div class="flip-card-back">
+    <Img w="50%" m="auto" src={el.img} />
+    </div>
+  </div>
+
+
         </GridItem>)}
     </Grid>
 </Box>
-<Box display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={{base:"center",sm:"center",md: "space-between"}} m="auto" w={{base:"100%",sm:"100%", md:"80%"}} mt="10">
-    <Box >
-        <Img src="https://github-readme-stats.vercel.app/api?username=rationalprabal&show_icons=true&locale=en" />
+<Text as="b" fontSize="5xl">Tools</Text>
+<Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+        <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/906/906324.png"/>
     </Box>
-    <Box mt={{base:"8",sm:"8",md:"0"}}>
-        <Img src="https://github-readme-streak-stats.herokuapp.com/?user=rationalprabal" />
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-down">
+    <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png"/>
+    </Box>
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+    <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/5968/5968929.png"/>
+    </Box>
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-down">
+    <Img  src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"/>
+    </Box>
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+    <Img w="50%" src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png"/>
     </Box>
 </Box>
-<Box m="auto" display="flex" justifyContent="center" mt={{base:"10",sm:"15",md:"20"}}>
-    <GitHubCalendar username="RationalPrabal"/>
-</Box>
+
+
    </Box>
 }
 
