@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 const Stats = () => {
     AOS.init()
   return (
-    <Box  mt={{base:"20",sm:"40",md:"65"}}>
+    <Box  mt={{base:"20",sm:"40",md:"65"}}    overflow="hidden">
     <Text as="b" fontSize="5xl">Stats</Text>
 <Box display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={{base:"center",sm:"center",md: "space-between"}} m="auto" w={{base:"100%",sm:"100%", md:"80%"}} mt="38">
     <Box data-aos="fade-down"

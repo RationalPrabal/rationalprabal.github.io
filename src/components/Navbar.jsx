@@ -64,12 +64,12 @@ import {
               aria-label={'Toggle Navigation'}
             />
           </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} ml={{md:"10"}}>
+          <Flex flex={{ base: 1 }} justify={{ base: 'center',sm:"center" ,md: 'start' }} ml={{md:"10"}}>
             <Text 
-              textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+              textAlign={useBreakpointValue({ base: 'right',sm:"right" , md: 'left' })}
               fontFamily={'heading'}
             
-            fontSize={{base:"xl",sm:"2xl",md:"4xl"}} as="b"  >
+            fontSize={{base:"xl",sm:"xl",md:"3xl"}} as="b"  >
          {a} Prabal /{b}
             </Text>
             </Flex>
@@ -83,7 +83,7 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-     <Button onClick={()=>{
+     <Button display={{base:"none",sm:"none"}} onClick={()=>{
       window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","blank")
      }}
               as={'a'}

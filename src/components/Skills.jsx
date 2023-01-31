@@ -23,13 +23,13 @@ const Skills = () => {
     ]
 
 
-  return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}>
+  return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}   overflow="hidden">
     <Text as="b" fontSize="5xl">Skills</Text>
 <Box>
     <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"100%",sm:"100%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"10",sm:"10",md:"20"}} >
         {arr.map(el=><GridItem  >
     
-    <Box  data-aos="flip-up">
+    <Box  data-aos="flip-up" data-aos-delay="600">
     <Img w="50%" m="auto" src={el.img} />
     </Box>
 
@@ -40,19 +40,19 @@ const Skills = () => {
 </Box>
 <Text as="b" fontSize="5xl">Tools</Text>
 <Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20" rowGap={{base:"10",sm:"10",md:"20"}}>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="600">
         <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/906/906324.png"/>
     </Box>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-down">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="600">
     <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png"/>
     </Box>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up" data-aos-delay="600">
     <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/5968/5968929.png"/>
     </Box>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-down">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="600">
     <Img  src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"/>
     </Box>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-up">
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="600">
     <Img w="50%" src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png"/>
     </Box>
 </Box>

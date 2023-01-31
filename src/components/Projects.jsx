@@ -14,10 +14,10 @@ const Projects = () => {
     <Grid id="Projects" m="auto" w="80%" mt={{base:"50",sm:"50",md:"70"}}> 
         <Text as="b" fontSize={"5xl" } >Projects</Text>
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-right">
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="600">
         <Img src={ayoa}  />
     </Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-left"  >
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom"  data-aos-delay="600">
         <Text as="b" fontSize={"3xl"} color="#319795">Ayoa.com Clone</Text>
    
     <br></br>
@@ -49,10 +49,10 @@ const Projects = () => {
     </Box>
 </GridItem>
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-right">
+<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="600">
 <Img src={cronofit} />
 </Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-left">
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="600">
     <Text as="b" fontSize={"3xl"} color="#319795">Cronofit</Text>
     
     <br></br>
@@ -82,10 +82,10 @@ const Projects = () => {
     </Box>
 </GridItem>
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-right">
+<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="600">
 <Img src={goodcluck}  justifyContent="space-between" />
 </Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-left">
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="600">
     <Text as="b" fontSize={"3xl"} color="#319795">Good Cluck</Text>
     
     <br></br>
@@ -117,10 +117,10 @@ const Projects = () => {
 
 {/* HotStar */}
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-right">
+<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="600">
 <Img src={HotStar}  justifyContent="space-between" />
 </Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-left">
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="600">
     <Text as="b" fontSize={"3xl"} color="#319795">HotStar</Text>
     
     <br></br>
@@ -153,10 +153,10 @@ const Projects = () => {
 
 {/* BabyBliss */}
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-right">
+<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up"  data-aos-delay="600">
 <Img src={BabyBliss}  justifyContent="space-between" />
 </Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-left">
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="600">
     <Text as="b" fontSize={"3xl"} color="#319795">BabyBliss</Text>
     
     <br></br>
