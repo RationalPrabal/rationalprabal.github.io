@@ -61,12 +61,15 @@ const Contact=()=>{
     </Box>
     <Box  w={{base:"100%", sm:"100%", md:"60%"}}>
         <br></br>
-<Input mt="5" placeholder="Your Full Name" />
+        <form action='https://getform.io/f/31c00949-3d40-4cf3-a7fa-5196ce0b8891'
+        method="POST">
+<Input mt="5" name="name" placeholder="Your Full Name" />
 
-<Input mt="10" placeholder="Your Email Adress" />
+<Input mt="10" type="email" name='email' placeholder="Your Email Adress" />
 
-<Textarea mt="10" size="5xl" placeholder="Enter your Message here" />
-<Button bg="#000048" mt="8" color="white">Submit</Button>
+<Textarea name="message" mt="10" size="5xl" placeholder="Enter your Message here" />
+<Button type='submit' bg="#000048" mt="8" color="white" formTarget="_blank">Submit</Button>
+</form>
     </Box>
     </Box>
 <Box fontWeight="bold" mt="5">    Handcrafted With   <FavoriteIcon style={{ color: "red",fontSize:"30px", marginBottom:"-8px" }}/>   By Prabal

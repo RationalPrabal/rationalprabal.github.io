@@ -83,7 +83,7 @@ import {
             justify={'flex-end'}
             direction={'row'}
             spacing={6}>
-     <Button display={{base:"none",sm:"none"}} onClick={()=>{
+     <Button display={{base:"none",sm:"none",md:"flex"}} onClick={()=>{
       window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","blank")
      }}
               as={'a'}
