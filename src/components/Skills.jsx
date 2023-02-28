@@ -38,13 +38,14 @@ const Skills = () => {
         </GridItem>)}
     </Grid>
 </Box>
-<Text as="b" fontSize="5xl">Tools</Text>
+<Box mt="70">
+<Text as="b" fontSize="5xl" >Tools</Text></Box>
 <Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20" rowGap={{base:"10",sm:"10",md:"20"}}>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="300">
         <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/906/906324.png"/>
     </Box>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="300">
-    <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/4926/4926624.png"/>
+    <Img w="100%" src="https://cdn.iconscout.com/icon/free/png-256/postman-3627889-3029115.png"/>
     </Box>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-up" data-aos-delay="300">
     <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/5968/5968929.png"/>
@@ -53,7 +54,7 @@ const Skills = () => {
     <Img  src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"/>
     </Box>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="300">
-    <Img w="50%" src="https://static-00.iconduck.com/assets.00/vercel-icon-512x449-3422jidz.png"/>
+    <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/733/733553.png"/>
     </Box>
 </Box>
 
