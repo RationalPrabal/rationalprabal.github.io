@@ -1,11 +1,11 @@
 import React from 'react'
 import {Text,Box,Img} from '@chakra-ui/react';
 import "./About.css"
-import Prabal from "./Prabal.png.png"
+import Prabalnew from "./Prabalnew.jpg"
 const About = () => {
   return (
 <>
-<Box id="About"  overflow="hidden" display={{sm:"grid" ,md:"flex"}} w="90%" m="auto" mt={{base:"20",sm:"40",lg:"100"}} alignItems="center" justifyContent="space-between">
+<Box id="About"  overflow="hidden" display={{sm:"grid" ,md:"flex"}} w="80%" m="auto" mt={{base:"20",sm:"40",lg:"100"}} alignItems="center" justifyContent="space-between">
 <Box w={{sm:"90%",md:"50%"}} data-aos="zoom-in" data-aos-duration="1500">
   <Box display={"flex"} justifyContent="center">
     <Text as="b" fontSize="3xl" mr="10px">I'm </Text>
@@ -29,7 +29,7 @@ A Quick Learner and a Passionate Full Stack Web Developer with 1200+hours hands-
     </Text>
 </Box>
 <Box data-aos="zoom-in" data-aos-duration="1500" w={{sm:"90%",md:"30%"}} mt={{base:"20",sm:"20"}}>
-    <Img borderRadius="50%" src={Prabal}/>
+    <Img borderRadius="50%"  m="auto" src={Prabalnew}/>
 </Box>
 </Box>
 </>

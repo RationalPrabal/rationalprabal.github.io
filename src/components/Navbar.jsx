@@ -16,6 +16,7 @@ import {
     useBreakpointValue,
     useDisclosure,
   } from '@chakra-ui/react';
+  import "./Navbar.css"
   import {Link} from "react-scroll";
   
   import {
@@ -84,14 +85,14 @@ import {
             direction={'row'}
             spacing={6}>
      <Button display={{base:"none",sm:"none",md:"flex"}} onClick={()=>{
-      window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","blank")
+      window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","_blank")
      }}
               as={'a'}
             bg="transparent"
            _hover="none"
               fontSize={'lg'}
            href={Prabal_Kumar_Dwivedi_Resume}
-              download="Prabal_Kumar_Dwivedi_Resume"
+              download={"fw21_1273_Prabal_Kumar_Dwivedi_Resume"}
               fontWeight={700}
               
               >
@@ -123,7 +124,7 @@ import {
                   smooth={true}
                   duration={500}
                   offset={-50}
-              
+                 activeClass='highlighted'
                  
                 style={{fontWeight:"700", fontSize:"1.25rem",padding:"6px"}}
                   _hover={{

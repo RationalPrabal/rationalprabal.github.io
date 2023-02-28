@@ -2,6 +2,8 @@
   text-align: center;
   /* background-image: url("https://media.istockphoto.com/id/843593806/photo/defocused-human-icons-on-black-background.jpg?b=1&s=170667a&w=0&k=20&c=jC3xDEH1in0w4rz0XMFOnOPL66h3j8C5dduQWJnvuVs=");
   background-attachment: fixed; */
+  background-color: black;
+  color: white;
 }
 
 .App-logo {
