@@ -7,10 +7,10 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact"
 import React from "react"
 import Stats from "./components/Stats";
-import bg from "./bg.jpg"
+
 function App() {
 React.useEffect(()=>{
-document.title="Prabal_Portfolio"
+document.title="Prabal"
 },[])
   return (
     <div className="App"
