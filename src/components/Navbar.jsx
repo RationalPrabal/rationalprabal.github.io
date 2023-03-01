@@ -194,10 +194,11 @@ import {
   const MobileNav = () => {
     return (
       <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+   
         p={4}
 w="40%"
-h="100vh"
+h="40vh"
+bg="black"
         display={{ md: 'none' }}>
         {NAV_ITEMS.map((navItem) => (
           <MobileNavItem key={navItem.label} {...navItem} />
@@ -216,7 +217,7 @@ h="100vh"
       
           py={2}
           // as={link}
-        
+        bg="black"
           href={href ?? '#'}
           justify={'space-between'}
           align={'center'}
@@ -243,25 +244,14 @@ h="100vh"
           <Stack
             mt={2}
             pl={4}
-           /// border={"2px solid green"}
-            //direction="column"
-            //position="absolute"
-            //zIndex={100}
+    
             top="10"
             height="120"
             borderLeft={1}
             borderStyle={'solid'}
             borderColor={useColorModeValue('gray.200', 'gray.700')}
             align={'start'}>
-            {/* {children &&
-              children.map((child) => {
-console.log(child)
-                return (
-                <Link key={child.label} to={child.label} py={2} href={child.href}>
-                  {child.label}
-                </Link>
-              )})} */}
-            
+       
           </Stack>
         </Collapse>
       </Stack>

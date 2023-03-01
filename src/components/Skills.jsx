@@ -26,7 +26,7 @@ const Skills = () => {
   return <Box id="Skills"  mt={{base:"20",sm:"40",md:"70"}}   overflow="hidden">
     <Text as="b" fontSize="5xl">Skills</Text>
 <Box>
-    <Grid templateColumns={{base:'repeat(1, 1fr)', sm :"repeat(2, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"100%",sm:"100%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"10",sm:"10",md:"20"}} >
+    <Grid templateColumns={{base:'repeat(3, 1fr)', sm :"repeat(3, 1fr)", md:'repeat(4, 1fr)'}} w={{base:"100%",sm:"100%",md:"75%"}} m="auto" textAlign={"center"}  mt={{base:"50",sm:"70",md:"100"}} rowGap={{base:"10",sm:"10",md:"20"}} >
         {arr.map(el=><GridItem  >
     
     <Box  data-aos="flip-up" data-aos-delay="300">
@@ -40,23 +40,33 @@ const Skills = () => {
 </Box>
 <Box mt="70">
 <Text as="b" fontSize="5xl" >Tools</Text></Box>
-<Box w={{base:"90%",sm:"80%",md:"75%"}} display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={"center"} m="auto" mt="20" rowGap={{base:"10",sm:"10",md:"20"}}>
-    <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="300">
+<Grid w={{base:"100%",sm:"80%",md:"75%"}}  templateColumns={{base:'repeat(2, 1fr)', sm :"repeat(3, 1fr)", md:'repeat(6, 1fr)'}} justifyContent={"center"} m="auto" mt="20" rowGap={{base:"10",sm:"10",md:"20"}}>
+  <GridItem>  <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="300">
         <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/906/906324.png"/>
-    </Box>
+    </Box></GridItem>
+    <GridItem>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-left" data-aos-delay="300">
-    <Img w="100%" src="https://cdn.iconscout.com/icon/free/png-256/postman-3627889-3029115.png"/>
+    <Img w="50%" src="https://cdn.iconscout.com/icon/free/png-256/postman-3627889-3029115.png"/>
     </Box>
+    </GridItem>
+    <GridItem>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-up" data-aos-delay="300">
     <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/5968/5968929.png"/>
     </Box>
+    </GridItem>
+    <GridItem>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="300">
-    <Img  src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"/>
-    </Box>
+    <Img w="60%"  src="https://cdn.iconscout.com/icon/free/png-256/netlify-3629537-3032320.png"/>
+    </Box></GridItem>
+    <GridItem>
     <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="300">
     <Img w="50%" src="https://cdn-icons-png.flaticon.com/512/733/733553.png"/>
-    </Box>
-</Box>
+    </Box></GridItem>
+    <GridItem>
+    <Box display={"flex"} justifyContent={"center"} data-aos="flip-right" data-aos-delay="300">
+    <Img w="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH5_u-GKegWRHV_CC_1SNLQueqwuWA3mdyVc9XmASLDihYuHLV1t7BSCtVbinnlgO1oWU&usqp=CAU"/>
+    </Box></GridItem>
+</Grid>
 
 
    </Box>

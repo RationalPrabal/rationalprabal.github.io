@@ -7,10 +7,10 @@ import "aos/dist/aos.css";
 const Stats = () => {
     AOS.init()
   return (
-    <Box  mt={{base:"20",sm:"40",md:"65"}}    overflow="hidden">
+    <Box  mt={{base:"20",sm:"30",md:"65"}}    overflow="hidden">
     <Text as="b" fontSize="5xl">Stats</Text>
 <Box display={{base:"grid", sm:"grid", md:"flex"}} justifyContent={{base:"center",sm:"center",md: "space-between"}} m="auto" w={{base:"100%",sm:"100%", md:"80%"}} mt="38">
-    <Box data-aos="fade-down"
+    <Box m="auto" data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="5000" >
         <Img src="https://github-readme-stats.vercel.app/api?username=rationalprabal&show_icons=true&locale=en&theme=dracula" />
