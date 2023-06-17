@@ -12,7 +12,7 @@ const Home=()=>{
   <form>
     
     <a onClick={()=>{
-      window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","blank")
+      window.open("https://drive.google.com/file/d/1sOuLaYTpfP3_UilxVwOefrEYYAZaeql_/view?usp=drive_link","blank")
      }}
     href={Prabal_Kumar_Dwivedi_Resume}
       download="fw21_1273_Prabal_Kumar_Dwivedi_Resume"

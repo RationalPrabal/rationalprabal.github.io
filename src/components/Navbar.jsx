@@ -85,14 +85,14 @@ import {
             direction={'row'}
             spacing={6}>
      <Button display={{base:"none",sm:"none",md:"flex"}} onClick={()=>{
-      window.open("https://drive.google.com/file/d/1-Hhb4PGQx0ntTXM1gacghUfrHt38ilyD/view?usp=share_link","_blank")
+      window.open("https://drive.google.com/file/d/1sOuLaYTpfP3_UilxVwOefrEYYAZaeql_/view?usp=drive_link","_blank")
      }}
               as={'a'}
             bg="transparent"
            _hover="none"
               fontSize={'lg'}
            href={Prabal_Kumar_Dwivedi_Resume}
-              download={"fw21_1273_Prabal_Kumar_Dwivedi_Resume"}
+              download={"Prabal_Kumar_Dwivedi_Resume"}
               fontWeight={700}
               
               >

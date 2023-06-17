@@ -48,7 +48,39 @@ const Projects = () => {
         </Box>
     </Box>
 </GridItem>
-
+<GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
+<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="300">
+<Img src={goodcluck}  justifyContent="space-between" />
+</Box>
+    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="300">
+    <Text as="b" fontSize={"3xl"} color="#319795">KFC-Clone</Text>
+    
+    <br></br>
+        <Text as="b">This Project is about a website through which we can Order various Veg & Non-Veg Fast-Foods.</Text>
+        
+        <br></br>
+        <Text as="b" color={"#4FA095"}>A Solo Project, developed in 4 days.</Text>
+        <br></br>
+<br></br>
+        <Box display="flex" justifyContent="space-between" w={{base:"80%",sm:"80%", md:"80%"}} m="auto">
+        <Box ><Img  align="center"  src="https://img.shields.io/badge/React-5ccfee?style=for-the-badge&logo=react"  alt="react js" /></Box>
+            <Box >
+            <Img align="center" src = "https://img.shields.io/badge/Chakra UI-2abfb3?style=for-the-badge&logo=chakra ui"  alt="chakra ui" />
+            </Box>
+            <Box >
+            <Img align="center" src ="https://img.shields.io/badge/Rest API-2962ff?style=for-the-badge&logo=api"  alt="Rest API"/>
+            </Box>
+        </Box>
+        <Box display={"flex"} justifyContent={{base:"space-between",sm:"space-around" ,md:"space-between"}} w={{base:"80%",sm:"90%", md:"60%"}} m="auto" mt="5">
+        <Button onClick={()=>{
+        window.open("https://github.com/RationalPrabal/KFC-clone",'_blank')
+       }} bg="#86efac">Github</Button>
+        <Button onClick={()=>{
+        window.open("https://goodcluck.netlify.app/",'_blank')
+       }} bg="#22d3ee">Live</Button>
+        </Box>
+    </Box>
+</GridItem>
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
     <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="300">
         <Img src={ayoa}  />
@@ -117,39 +149,7 @@ const Projects = () => {
         </Box>
     </Box>
 </GridItem>
-<GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>
-<Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-up" data-aos-delay="300">
-<Img src={goodcluck}  justifyContent="space-between" />
-</Box>
-    <Box w={{base:"80%", sm:"90%",md:"40%"}} m="auto" data-aos="fade-bottom" data-aos-delay="300">
-    <Text as="b" fontSize={"3xl"} color="#319795">KFC-Clone</Text>
-    
-    <br></br>
-        <Text as="b">This Project is about a website through which we can Order various Veg & Non-Veg Fast-Foods.</Text>
-        
-        <br></br>
-        <Text as="b" color={"#4FA095"}>A Solo Project, developed in 4 days.</Text>
-        <br></br>
-<br></br>
-        <Box display="flex" justifyContent="space-between" w={{base:"80%",sm:"80%", md:"80%"}} m="auto">
-        <Box ><Img  align="center"  src="https://img.shields.io/badge/React-5ccfee?style=for-the-badge&logo=react"  alt="react js" /></Box>
-            <Box >
-            <Img align="center" src = "https://img.shields.io/badge/Chakra UI-2abfb3?style=for-the-badge&logo=chakra ui"  alt="chakra ui" />
-            </Box>
-            <Box >
-            <Img align="center" src ="https://img.shields.io/badge/Rest API-2962ff?style=for-the-badge&logo=api"  alt="Rest API"/>
-            </Box>
-        </Box>
-        <Box display={"flex"} justifyContent={{base:"space-between",sm:"space-around" ,md:"space-between"}} w={{base:"80%",sm:"90%", md:"60%"}} m="auto" mt="5">
-        <Button onClick={()=>{
-        window.open("https://github.com/RationalPrabal/KFC-clone",'_blank')
-       }} bg="#86efac">Github</Button>
-        <Button onClick={()=>{
-        window.open("https://goodcluck.netlify.app/",'_blank')
-       }} bg="#22d3ee">Live</Button>
-        </Box>
-    </Box>
-</GridItem>
+
 
 {/* HotStar */}
 <GridItem display={{base:"grid",sm:"grid",md:"flex"}} justifyContent="space-between" mt={{base:"50",sm:"70",md:"100"}}>

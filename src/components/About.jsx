@@ -25,7 +25,10 @@ const About = () => {
     <br></br>
     <br></br>
     <Text as="b">
-A Quick Learner and a Passionate Full Stack Web Developer with 1200+hours hands-on experience in coding. Have built 5 major projects, 50+ minor projects and learnt all the mentioned Tech Stack within the last 6 months . Looking forward to work as a responsible and competent employee in an exciting organization.
+    A dedicated and agile Full Stack Web Developer with 1-month of
+professional experience. 1200+ hours of hands-on experience in
+coding and 500+ hours of DSA. Have built 5 major projects and
+20+ minor projects . Looking forward to work as a responsible and competent employee in an exciting organization.
     </Text>
 </Box>
 <Box data-aos="zoom-in" data-aos-duration="1500" w={{sm:"90%",md:"30%"}} mt={{base:"20",sm:"20"}}>
