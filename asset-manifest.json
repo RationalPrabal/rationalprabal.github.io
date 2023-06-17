@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da745c24.css",
-    "main.js": "/static/js/main.369f515d.js",
+    "main.js": "/static/js/main.d28a1f66.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/BabyBliss.png": "/static/media/BabyBliss.a13febc3adecd1991da2.png",
     "static/media/goodcluck.png": "/static/media/goodcluck.a0749ed9fe23845844ce.png",
@@ -9,14 +9,14 @@
     "static/media/ayoa.png": "/static/media/ayoa.35ae6d82af14a8131e26.png",
     "static/media/Prabalnew.jpg": "/static/media/Prabalnew.261a93386c7ff6cbc614.jpg",
     "static/media/cronofit.png": "/static/media/cronofit.500dbdc9acd38c7764ab.png",
-    "static/media/Prabal_Kumar_Dwivedi_Resume.pdf": "/static/media/Prabal_Kumar_Dwivedi_Resume.2f5fc2ed24515ada6ac1.pdf",
+    "static/media/Prabal_Kumar_Dwivedi_Resume.pdf": "/static/media/Prabal_Kumar_Dwivedi_Resume.2773cf219b2c0b1c8ac1.pdf",
     "index.html": "/index.html",
     "main.da745c24.css.map": "/static/css/main.da745c24.css.map",
-    "main.369f515d.js.map": "/static/js/main.369f515d.js.map",
+    "main.d28a1f66.js.map": "/static/js/main.d28a1f66.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da745c24.css",
-    "static/js/main.369f515d.js"
+    "static/js/main.d28a1f66.js"
   ]
 }
