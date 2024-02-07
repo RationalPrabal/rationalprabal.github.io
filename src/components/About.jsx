@@ -51,7 +51,7 @@ const About = () => {
           <br></br>
           <br></br>
           <Text as="b">
-            A dedicated and agile Full Stack Web Developer with 8 months of
+            A dedicated and agile Full Stack Web Developer with 9 months of
             professional experience. My journey in web development is a constant
             exploration of innovative solutions to real-world challenges.
             Whether it's expanding my knowledge in the MERN Stack or venturing
