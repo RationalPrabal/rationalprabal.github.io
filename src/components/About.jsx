@@ -51,12 +51,13 @@ const About = () => {
           <br></br>
           <br></br>
           <Text as="b">
-            A dedicated and agile Full Stack Web Developer with 11 months of
-            professional experience. My journey in web development is a constant
-            exploration of innovative solutions to real-world challenges.
-            Whether it's expanding my knowledge in the MERN Stack or venturing
-            into other technologies, I'm committed to delivering efficient and
-            visually appealing web solutions.
+            Full Stack Web Developer with over 1 year of hands-on experience in
+            designing, developing, and deploying dynamic web applications using
+            the MERN stack . Skilled in designing and implementing robust web
+            applications using a variety of technologies. Proficient in creating
+            efficient and scalable solutions, staying current with industry best
+            practices. Committed to delivering high quality software that meets
+            business objectives.
           </Text>
         </Box>
         <Box
