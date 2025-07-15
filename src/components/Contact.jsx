@@ -26,7 +26,7 @@ const Contact=()=>{
     <br></br>
     <Text as="b" color="white">WhatsApp</Text>
     <br></br>
-    <Text as="b" color="white">8463891744</Text>
+    <Text as="b" color="white"></Text>
     <br></br>
     <Text as="b" color="#2179ab" cursor={"pointer"} onClick={()=>{
         window.open("https://api.whatsapp.com/send?phone=8463891744","blank")
