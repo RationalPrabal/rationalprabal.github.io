@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# rationalprabal.github.io
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio of **Prabal Kumar Dwivedi**, full-stack engineer. Live at <https://rationalprabal.github.io>.
 
-## Available Scripts
+Built with React 19 and Vite, with hand-written CSS (no UI framework). Light and dark themes, a ⌘K command menu, and scroll-reveal motion that respects `prefers-reduced-motion`.
 
-In the project directory, you can run:
+## Develop
 
-### `npm start`
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # production build in dist/
+npm run preview   # serve the production build
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Vite 8 needs Node 20.19+ or 22.12+. If `npm install` fails with
+> `Cannot read properties of null (reading 'edgesOut')`, you're on an older npm. Run `npx npm@11 install` instead.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Edit content
 
-### `npm test`
+Everything you see on the page lives in [`src/data.js`](src/data.js): profile, links, about text, experience, projects, archive and skills. Components only handle layout.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Setting                      | What it does                                                    |
+| ---------------------------- | --------------------------------------------------------------- |
+| `profile.status`             | Green "open to…" pill in the hero. Set to `null` to hide it.    |
+| `profile.resume`             | Résumé link (Google Drive) used by every résumé button.         |
+| `profile.formEndpoint`       | getform.io endpoint for the contact form.                       |
+| `profile.showGitHubActivity` | Shows the GitHub contribution graph under Skills.               |
+| `projects[].featured`        | Makes a project the full-width lead card.                       |
 
-### `npm run build`
+Each project's illustration is a small CSS/SVG mock in [`src/components/ProjectVisual.jsx`](src/components/ProjectVisual.jsx), keyed by project `id`. A new project needs a matching entry there, or it renders an empty tinted panel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deploy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GitHub Pages serves the `gh-pages` branch:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm run deploy    # builds, then pushes dist/ to gh-pages
+```
 
-### `npm run eject`
+## Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+index.html              meta / Open Graph / no-flash theme script
+public/                 favicon, og.png, apple-touch-icon
+src/
+  data.js               all site content
+  hooks.js              theme, reveal, active-section, clock, spotlight, copy
+  styles/global.css     design tokens, base styles, buttons, utilities
+  components/           one .jsx + .css per section
+```

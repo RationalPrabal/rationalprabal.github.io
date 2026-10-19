@@ -1,218 +1,111 @@
-import React from "react";
-import { Box, Text, Grid, GridItem, Img, Button } from "@chakra-ui/react";
-import AOS from "aos";
+import { LuArrowUpRight } from "react-icons/lu";
+import { SiGithub } from "react-icons/si";
+import { projects, archive, profile } from "../data";
+import ProjectVisual from "./ProjectVisual";
+import "./Projects.css";
+import "./ProjectVisual.css";
 
-import "aos/dist/aos.css";
-import BabyBliss from "./BabyBliss.png";
-import goodcluck from "./goodcluck.png";
-const Projects = () => {
-  AOS.init();
+function ProjectLinks({ links, title }) {
   return (
-    <Grid
-      id="Projects"
-      m="auto"
-      w="80%"
-      mt={{ base: "50", sm: "50", md: "70" }}
-    >
-      <Text as="b" fontSize={"5xl"}>
-        Projects
-      </Text>
-      {/* BabyBliss */}
-      <GridItem
-        display={{ base: "grid", sm: "grid", md: "flex" }}
-        justifyContent="space-between"
-        mt={{ base: "50", sm: "70", md: "100" }}
-      >
-        <Box
-          w={{ base: "80%", sm: "90%", md: "40%" }}
-          m="auto"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <Img src={BabyBliss} justifyContent="space-between" />
-        </Box>
-        <Box
-          w={{ base: "80%", sm: "90%", md: "40%" }}
-          m="auto"
-          data-aos="fade-bottom"
-          data-aos-delay="300"
-        >
-          <Text as="b" fontSize={"3xl"} color="#319795">
-            BabyBliss
-          </Text>
-
-          <br></br>
-          <Text as="b">
-            This Project is about a website through which we can purchase
-            various products including cloths for our Kids.
-          </Text>
-
-          <br></br>
-          <Text as="b" color={"#4FA095"}>
-            A Colloberative Project, devoloped by the team of 5 Developers in 4
-            days.Worked as Project Lead.
-          </Text>
-          <br></br>
-          <br></br>
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            w={{ base: "80%", sm: "80%", md: "80%" }}
-            m="auto"
-          >
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/Next JS-000000?style=for-the-badge&logo=nextjs"
-                alt="Next JS"
-              />
-            </Box>
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/Chakra UI-2abfb3?style=for-the-badge&logo=chakra ui"
-                alt="chakra ui"
-              />
-            </Box>
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/Rest API-2962ff?style=for-the-badge&logo=api"
-                alt="Rest API"
-              />
-            </Box>
-          </Box>
-          <Box
-            display={"flex"}
-            justifyContent={{
-              base: "space-between",
-              sm: "space-around",
-              md: "space-between",
-            }}
-            w={{ base: "80%", sm: "90%", md: "60%" }}
-            m="auto"
-            mt="5"
-          >
-            <Button
-              onClick={() => {
-                window.open(
-                  "https://github.com/RationalPrabal/Baby-Bliss",
-                  "_blank"
-                );
-              }}
-              bg="#86efac"
-            >
-              Github
-            </Button>
-            <Button
-              onClick={() => {
-                window.open("https://baby-bliss.vercel.app/", "_blank");
-              }}
-              bg="#22d3ee"
-            >
-              Live
-            </Button>
-          </Box>
-        </Box>
-      </GridItem>
-      <GridItem
-        display={{ base: "grid", sm: "grid", md: "flex" }}
-        justifyContent="space-between"
-        mt={{ base: "50", sm: "70", md: "100" }}
-      >
-        <Box
-          w={{ base: "80%", sm: "90%", md: "40%" }}
-          m="auto"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          <Img src={goodcluck} justifyContent="space-between" />
-        </Box>
-        <Box
-          w={{ base: "80%", sm: "90%", md: "40%" }}
-          m="auto"
-          data-aos="fade-bottom"
-          data-aos-delay="300"
-        >
-          <Text as="b" fontSize={"3xl"} color="#319795">
-            KFC-Clone
-          </Text>
-
-          <br></br>
-          <Text as="b">
-            This Project is about a website through which we can Order various
-            Veg & Non-Veg Fast-Foods.
-          </Text>
-
-          <br></br>
-          <Text as="b" color={"#4FA095"}>
-            A Solo Project, developed in 4 days.
-          </Text>
-          <br></br>
-          <br></br>
-          <Box
-            display="flex"
-            justifyContent="space-between"
-            w={{ base: "80%", sm: "80%", md: "80%" }}
-            m="auto"
-          >
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/React-5ccfee?style=for-the-badge&logo=react"
-                alt="react js"
-              />
-            </Box>
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/Chakra UI-2abfb3?style=for-the-badge&logo=chakra ui"
-                alt="chakra ui"
-              />
-            </Box>
-            <Box>
-              <Img
-                align="center"
-                src="https://img.shields.io/badge/Rest API-2962ff?style=for-the-badge&logo=api"
-                alt="Rest API"
-              />
-            </Box>
-          </Box>
-          <Box
-            display={"flex"}
-            justifyContent={{
-              base: "space-between",
-              sm: "space-around",
-              md: "space-between",
-            }}
-            w={{ base: "80%", sm: "90%", md: "60%" }}
-            m="auto"
-            mt="5"
-          >
-            <Button
-              onClick={() => {
-                window.open(
-                  "https://github.com/RationalPrabal/KFC-clone",
-                  "_blank"
-                );
-              }}
-              bg="#86efac"
-            >
-              Github
-            </Button>
-            <Button
-              onClick={() => {
-                window.open("https://goodcluck.netlify.app/", "_blank");
-              }}
-              bg="#22d3ee"
-            >
-              Live
-            </Button>
-          </Box>
-        </Box>
-      </GridItem>
-    </Grid>
+    <div className="proj-links">
+      {links.live && (
+        <a className="btn btn-primary btn-sm" href={links.live} target="_blank" rel="noreferrer">
+          Live site <LuArrowUpRight aria-hidden="true" />
+          <span className="sr-only"> for {title}</span>
+        </a>
+      )}
+      {links.code && (
+        <a className="btn btn-ghost btn-sm" href={links.code} target="_blank" rel="noreferrer">
+          <SiGithub aria-hidden="true" /> Source
+          <span className="sr-only"> code for {title}</span>
+        </a>
+      )}
+    </div>
   );
-};
+}
 
-export default Projects;
+function ProjectCard({ p, index }) {
+  return (
+    <article
+      className={`proj spotlight ${p.featured ? "proj-featured" : ""}`}
+      data-reveal
+      style={{ "--d": index % 2 }}
+    >
+      <ProjectVisual id={p.id} />
+      <div className="proj-body">
+        <p className="proj-meta">
+          <span>{p.year}</span>
+          <span aria-hidden="true">/</span>
+          <span>{p.kind}</span>
+          {p.featured && <span className="proj-flag">Latest</span>}
+        </p>
+        <h3 className="proj-title">{p.title}</h3>
+        <p className="proj-tagline">{p.tagline}</p>
+        <p className="proj-desc">{p.description}</p>
+        <ul className="proj-stack" aria-label="Built with">
+          {p.stack.map((s) => (
+            <li key={s} className="chip">
+              {s}
+            </li>
+          ))}
+        </ul>
+        <ProjectLinks links={p.links} title={p.title} />
+      </div>
+    </article>
+  );
+}
+
+export default function Projects() {
+  return (
+    <section id="work" className="section work">
+      <div className="container">
+        <header className="section-head work-head" data-reveal>
+          <p className="eyebrow">
+            <span className="num">03</span> Selected work
+          </p>
+          <div className="work-head-row">
+            <h2 className="h2">
+              Things I've <span className="serif accent">designed, built</span> &amp; shipped.
+            </h2>
+            <p className="work-head-note">
+              From AI document search to visual data pipelines — each one built end to end, API to interface.
+            </p>
+          </div>
+        </header>
+
+        <div className="proj-grid">
+          {projects.map((p, i) => (
+            <ProjectCard key={p.id} p={p} index={i} />
+          ))}
+        </div>
+
+        <div className="archive" data-reveal>
+          <div className="archive-head">
+            <h3>More from the archive</h3>
+            <a
+              className="archive-all"
+              href={`https://github.com/${profile.githubUser}?tab=repositories`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              All repositories <LuArrowUpRight aria-hidden="true" />
+            </a>
+          </div>
+          <ul className="archive-list">
+            {archive.map((a) => (
+              <li key={a.title}>
+                <a href={a.href} target="_blank" rel="noreferrer">
+                  <span className="ar-year">{a.year}</span>
+                  <span className="ar-title">{a.title}</span>
+                  <span className="ar-note">{a.note}</span>
+                  <span className="ar-stack">{a.stack}</span>
+                  <LuArrowUpRight className="ar-arrow" aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}

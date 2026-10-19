@@ -1,62 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-body {
-  margin:0px;
-  font-family:'Roboto';
-  text-align:center;
+.about {
+  border-top: 1px solid var(--line);
 }
 
-
-
-.flip {
-    /* border: 2px solid teal; */
-  height:50px;
-  overflow:hidden;
-  font-size: 30px; 
-  font-weight: 700;
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: clamp(40px, 7vw, 120px);
+  align-items: start;
 }
 
-.flip > div > div {
-  color:#fff;
-  /* padding:4px 12px; */
-  height:0px;
-  /* margin-bottom:45px; */
-  display:inline-block;
+.about-head {
+  position: sticky;
+  top: calc(var(--nav-h) + 40px);
+  margin-bottom: 0;
 }
 
-.flip div:first-child {
-  animation: show 5s linear infinite;
+.about-body {
+  display: grid;
+  gap: 22px;
+  color: var(--text-2);
+  font-size: var(--step-1);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.about-lead {
+  color: var(--text);
 }
 
-.flip div  {
-    color: green;
- 
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 28px 0 0;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
-.flip div:first-child div {
-    color: goldenrod;
-  background:#fcba26;
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 26px 24px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
-.flip div:last-child div {
-    color: red;
-  background:#DC143C;
+.stat dd {
+  margin: 0;
+  font-size: var(--step-3);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.stat dt {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.4;
 }
 
-@keyframes show {
-  0% {margin-top:-270px;}
-  5% {margin-top:-180px;}
-  33% {margin-top:-180px;}
-  38% {margin-top:-90px;}
-  66% {margin-top:-90px;}
-  71% {margin-top:0px;}
-  99.99% {margin-top:0px;}
-  100% {margin-top:-270px;}
+@media (max-width: 860px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-head {
+    position: static;
+  }
 }
 
-/* p {
-  position:fixed;
-  width:100%;
-  bottom:30px;
-  font-size:12px;
-  color:#999;
-  margin-top:200px;
-} */
+@media (max-width: 420px) {
+  .stat {
+    padding: 20px 16px;
+  }
+}

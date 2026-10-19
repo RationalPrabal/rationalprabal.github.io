@@ -1,0 +1,125 @@
+.experience {
+  background: var(--bg-soft);
+  border-block: 1px solid var(--line);
+}
+
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 220px 40px minmax(0, 1fr);
+  padding-bottom: 44px;
+  position: relative;
+}
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Vertical rail */
+.tl-item::before {
+  content: "";
+  position: absolute;
+  left: 239.5px;
+  top: 14px;
+  bottom: -14px;
+  width: 1px;
+  background: var(--line-strong);
+}
+.tl-item:last-child::before {
+  display: none;
+}
+
+.tl-when {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding-top: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+.tl-period {
+  color: var(--text);
+}
+.tl-place {
+  color: var(--muted);
+}
+
+.tl-marker {
+  justify-self: center;
+  width: 11px;
+  height: 11px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  border: 2px solid var(--muted);
+  position: relative;
+  z-index: 1;
+}
+.tl-item.is-current .tl-marker {
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-soft);
+}
+
+.tl-body {
+  display: grid;
+  gap: 12px;
+  padding-left: 12px;
+  max-width: 68ch;
+}
+.tl-role {
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+.tl-at {
+  color: var(--muted);
+  font-weight: 450;
+}
+.tl-summary {
+  color: var(--text-2);
+}
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 720px) {
+  .tl-item {
+    grid-template-columns: 24px minmax(0, 1fr);
+    grid-template-areas:
+      "marker when"
+      ". body";
+    row-gap: 8px;
+  }
+  .tl-item::before {
+    left: 11.5px;
+  }
+  .tl-marker {
+    grid-area: marker;
+    margin-top: 4px;
+  }
+  .tl-when {
+    grid-area: when;
+    display: flex;
+    gap: 10px;
+    padding-left: 12px;
+    padding-top: 0;
+  }
+  .tl-place::before {
+    content: "· ";
+  }
+  .tl-body {
+    grid-area: body;
+  }
+}
