@@ -77,7 +77,7 @@ export default function Hero() {
 
         <aside className="id-card spotlight hero-in" style={{ "--d": 3 }} aria-label="Profile">
           <div className="id-photo">
-            <img src={portrait} alt={`Portrait of ${profile.name}`} width="720" height="720" />
+            <img src={portrait} alt={`Portrait of ${profile.name}`} width="800" height="1000" />
           </div>
           <div className="id-body">
             <div>

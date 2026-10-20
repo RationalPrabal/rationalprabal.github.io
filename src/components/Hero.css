@@ -160,7 +160,7 @@
 .id-card {
   justify-self: end;
   width: 100%;
-  max-width: 380px;
+  max-width: 350px;
   padding: 12px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
@@ -176,7 +176,7 @@
 }
 .id-photo {
   position: relative;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   border-radius: 14px;
   overflow: hidden;
   background: var(--surface-2);
@@ -354,7 +354,7 @@
     aspect-ratio: 4 / 3;
   }
   .id-photo img {
-    object-position: 50% 30%;
+    object-position: 50% 22%;
   }
   .id-body {
     padding: 14px 6px 6px;
