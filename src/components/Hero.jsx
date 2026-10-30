@@ -2,7 +2,7 @@ import { LuArrowRight, LuArrowDown } from "react-icons/lu";
 import { profile, socials, experience, skills } from "../data";
 import { useLocalTime } from "../hooks";
 import { socialIcons } from "./Icons";
-import portrait from "../assets/portrait.webp";
+import illustration from "../assets/hero-illustration.svg";
 import "./Hero.css";
 
 const current = experience.find((e) => /present/i.test(e.period));
@@ -77,7 +77,7 @@ export default function Hero() {
 
         <aside className="id-card spotlight hero-in" style={{ "--d": 3 }} aria-label="Profile">
           <div className="id-photo">
-            <img src={portrait} alt={`Portrait of ${profile.name}`} width="800" height="1000" />
+            <img src={illustration} alt="Illustration of a lone tree on a grassy hill under summer clouds" width="800" height="1000" />
           </div>
           <div className="id-body">
             <div>
